@@ -9,7 +9,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 // Galeria de fotos com legendas
 const galleryPhotos = [
   {
-    image: '/images/gallery/photo1.jpg',
+    image: '/images/diretoria.jpg',
     caption: 'Apresentação de projeto final no Inteli',
     date: 'Dezembro 2024',
   },
@@ -91,15 +91,12 @@ export default function PhotoGallery() {
                 Adicione suas fotos em /public/images/gallery/
               </p>
             </div>
-            {/* Descomente quando adicionar imagens reais:
             <Image
               src={galleryPhotos[currentIndex].image}
               alt={galleryPhotos[currentIndex].caption}
               fill
               className="object-cover"
-            />
-            */}
-            
+            />            
             {/* Overlay com gradiente */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             
@@ -168,14 +165,12 @@ export default function PhotoGallery() {
               <div className="absolute inset-0 bg-gradient-to-br from-france-blue-100 to-france-red-100 dark:from-france-blue-900/30 dark:to-france-red-900/30 flex items-center justify-center text-2xl">
                 📷
               </div>
-              {/* Descomente quando adicionar imagens reais:
               <Image
                 src={photo.image}
                 alt={photo.caption}
                 fill
                 className="object-cover"
               />
-              */}
             </button>
           ))}
         </motion.div>

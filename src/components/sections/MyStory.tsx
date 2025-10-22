@@ -7,17 +7,15 @@ import { Github, Linkedin, Instagram, Mail, Users } from 'lucide-react'
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com/Biabborges', label: 'GitHub' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Mail, href: 'mailto:seuemail@example.com', label: 'Email' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/biancablins/', label: 'LinkedIn' },
+  { icon: Instagram, href: 'https://www.instagram.com/biaalinz/', label: 'Instagram' },
+  { icon: Mail, href: 'mailto:contato.biancalins@gmail.com', label: 'Email' },
 ]
 
 export default function MyStory() {
   return (
     <Section id="historia" background="gray">
-      {/* Seção Principal - Sobre mim */}
       <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-        {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -26,23 +24,13 @@ export default function MyStory() {
           className="relative"
         >
           <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-france-blue-200 to-france-red-200 dark:from-france-blue-900 dark:to-france-red-900">
-            {/* Placeholder for photo - replace with actual image */}
-            <div className="w-full h-full flex items-center justify-center flex-col gap-3">
-              <div className="text-7xl">📸</div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 px-4 text-center">
-                Adicione sua foto em /public/images/profile.jpg
-              </p>
-            </div>
-            {/* Descomente quando adicionar sua foto:
             <Image
-              src="/images/profile.jpg"
+              src="/images/IMG_8235.jpg"
               alt="Foto de perfil"
               fill
               className="object-cover"
             />
-            */}
           </div>
-          {/* Decorative elements */}
           <div className="absolute -z-10 top-4 -right-4 w-full h-full rounded-2xl bg-france-blue-300/30 dark:bg-france-blue-700/30" />
         </motion.div>
 
@@ -144,14 +132,12 @@ export default function MyStory() {
                   /public/images/family/family-full.jpg
                 </p>
               </div>
-              {/* Descomente quando adicionar imagem:
               <Image
-                src="/images/family/family-full.jpg"
+                src="/images/família.jpg"
                 alt="Minha família"
                 fill
                 className="object-cover"
               />
-              */}
             </div>
           </motion.div>
 
@@ -169,14 +155,12 @@ export default function MyStory() {
                   Momento especial
                 </p>
               </div>
-              {/* Descomente quando adicionar imagem:
               <Image
-                src="/images/family/family-moment.jpg"
+                src="/images/Pai e eu.jpg"
                 alt="Momento em família"
                 fill
                 className="object-cover"
               />
-              */}
             </div>
           </motion.div>
         </div>
